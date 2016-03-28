@@ -1,0 +1,21 @@
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+}
+
+.sliderDescription {
+	padding-top: 25px;
+	text-align:left;		
+}
+
+.questionPage {
+	width:85%;
+	text-align:center;
+}
+
+hr
+{
+    border: 5px solid #000;
+}

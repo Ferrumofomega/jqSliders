@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Sam Zimmerman">
+    <link rel="icon" href="barth.ico">
+    <link rel="prev" href="page1.html" />
+
+    <title>Bootstrap with JQuery Sliders</title>
+
+   <!-- Bootstrap core CSS -->
+    <link href="bootstrap-3.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="bootstrap-slider-master/dist/css/bootstrap-slider.css" rel="stylesheet">
+    <link href="JQSlider.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">PROJECT TITLE</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="questionPage">
+        <h1>Questionnaire Page 7</h1>
+        <p class="lead">
+		</p>
+        
+        <h2> What would someone who is as  dissimilar to you as possible be like? Your answers to the original questions are set on the slider, and can be reverted to by clicking the 'Reset to Initial Value' button</h2>
+        <hr>
+<p>
+      <span id = "iQ_5SliderDescript" class="sliderDescription"> IQ </span>
+      </p>
+       <br> 
+		<input class= "classSlider" id="iQ_5Slider" parent="iQSlider" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="50"/>
+		<span id="iQ_5SliderCurrentSliderValLabel"></span>
+        <hr>
+      	<p>
+        <span id = "physicalFitness_5SliderDescript" class="sliderDescription"> </span>
+        </p>
+
+      	<p><span class="sliderDescription">Physical Fitness & Health</span>
+   	    </p>
+        <br> 
+        <p>
+          <input class= "classSlider" id="physicalFitness_5Slider" parent="physicalFitnessSlider" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="9"/>
+          <span id="physicalFitness_5SliderCurrentSliderValLabel"></span>
+        </p>
+        <hr>
+<p>
+      <span id = "charisma_5SliderDescript" class="sliderDescription"> Charisma</span>
+      </p>
+        <br> 
+        <p>
+          <input class= "classSlider" id="charisma_5Slider" parent="charismaSlider" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="9"/>
+          <span id="charisma_5SliderCurrentSliderValLabel"></span>
+        <hr>
+          
+        </p>
+       <p>
+       <span id = "creativity_5SliderDescript" class="sliderDescription"> Creativity</span>
+       </p>
+       <br> 
+       <p>
+         <input class= "classSlider" id="creativity_5Slider" parent="creativitySlider" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="9"/>
+         <span id="creativity_5SliderCurrentSliderValLabel"></span>
+        <hr>
+         
+       </p>
+       
+       </p>
+       <p>
+       <span id = "morality_5SliderDescript" class="sliderDescription"> Morality</span>
+       </p>
+       <br> 
+       <p>
+         <input class= "classSlider" id="morality_5Slider" parent="moralitySlider" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="9"/>
+         <span id="morality_5SliderCurrentSliderValLabel"></span>
+        <hr>
+         
+       </p>
+       
+       <h2>For the following traits, please rate yourself along the scale:</h2>
+       
+       <p>       
+       <span id = "optimism_5SliderDescript" class="sliderDescription"> Optimism vs Pessimism</span>
+       </p>
+       <br> 
+       <p>
+       <span id="optimism_5SliderPessimismLabel">Extremely Pessimistic </span>
+         <input class= "classSlider" id="optimism_5Slider" parent="optimismSlider" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="9"/>
+         <span id="optimism_5SlideroptimismLabel">Extremely Optimistic </span>  
+       </p>
+       <hr>
+       <p>
+<span id = "extroversion_5SliderDescript" class="sliderDescription"> Extroversion vs Introversion</span>
+	  </p>
+       
+       <br>
+       <p>
+       <span id="extroversion_5SliderintroversionLabel">Extremely Introverted </span>
+         <input class= "classSlider" id="extroversion_5Slider" parent="extroversionSlider" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="9"/>
+         <span id="extroversion_5SliderextroversionLabel">Extremely Extroverted </span>
+        <hr>
+         
+       </p>
+       <p>
+<span id = "openness_5SliderDescript" class="sliderDescription"> Openness / Closedness to New Experiences</span>
+	  </p>
+       
+       <br>
+       <p>
+       <span id="openness_5SliderclosednessLabel">Extremely Closed </span>
+         <input class= "classSlider" id="openness_5Slider" parent="opennessSlider" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="9"/>
+         <span id="openness_5SlideropennessLabel">Extremely Open </span>
+        <hr>
+         
+       </p>
+       <p>
+<span id = "heart_5SliderDescript" class="sliderDescription"> Going with Your Head vs. Heart</span>
+	  </p>
+       
+       <br>
+       <p>
+       <span id="heart_5SliderintroversionLabel">Mostly Head </span>
+         <input class= "classSlider" id="heart_5Slider" parent="heartSlider" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="9"/>
+         <span id="heart_5SliderheartLabel">Mostly Heart </span>
+        <hr>
+         
+       </p>
+       <p>&nbsp;</p>
+       <button class="nextLink"> Next-> </button>
+        <p>&nbsp;</p>
+        
+      
+        <input type="submit" onclick="resetAllSliders();" name="resetAllSliders" id="resetAllSliders" value="Reset">
+        <p>
+        <label>Click here if you wish to reset the questionnaire.
+        </label>
+        </p>
+        
+      </div>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+	<script src="bootstrap-slider-master/dist/bootstrap-slider.min.js"></script>
+    <script src="jquery-cookie-1.4.1/jquery.cookie.js"></script>
+	<script src="JQSlider.js"></script>
+    <script>
+		onPageLoad();
+	</script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="ie10-viewport-bug-workaround.js"></script>>
+  </body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Sam Zimmerman">
+    <link rel="icon" href="barth.ico">
+    <link rel="next" href="page2.html" />
+
+    <title>Bootstrap with JQuery Sliders</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap-3.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="bootstrap-slider-master/dist/css/bootstrap-slider.css" rel="stylesheet">
+    <link href="JQSlider.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">PROJECT TITLE</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="JQSlider Template">
+        <h1>Personality questionnaire Page 10</h1>
+        <p class="lead">Suggest 3 additional traits not listed here, which you think are important in describing who you are as a person. Rate yourself on a scale for these traits. (There are no input validation functions on this page)</p>
+		<hr>
+		<div>
+            <label>
+                <input type="text" class="selfDefText" id="selfDef_1Text">
+            </label>
+            <p>&nbsp;</p>
+            <div>
+                <p>
+                <input class= "classSlider" id="selfDef_1Slider" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="3"/>
+              
+                </p>
+            </div>
+        </div>
+        <p>&nbsp;</p>
+        <div>
+            <label>
+                <input type="text" class="selfDefText" id="selfDef_2Text">
+            </label>
+            <p>&nbsp;</p>
+            <div>
+                <p>
+                <input class= "classSlider" id="selfDef_2Slider" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="3"/>
+              
+                </p>
+            </div>
+        </div>
+        <p>&nbsp;</p>
+        <div>
+            <label>
+                <input type="text" class="selfDefText" id="selfDef_3Text">
+            </label>
+            <p>&nbsp;</p>
+            <div>
+                <p>
+                <input class= "classSlider" id="selfDef_3Slider" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="3"/>
+              
+                </p>
+            </div>
+        </div>
+        <hr>
+       <div id="generalQuestDescript">
+           <p>
+           Space to add some general questions about personality / identity (endorsing the statements "I think the situation determines 	your reaction / I think your personality determines your reaction", "I will be a very different person in 10 years", etc). We'll work out exact questions.
+           </p>
+       </div>
+       
+       <div id="generalQuestDiv">
+           <textarea name="generalQuest_1" cols="50" rows="5" class="generalQuestClass" id="generalQuest_1" dir="ltr"></textarea>
+           <p>&nbsp;</p>
+           <textarea name="generalQuest_2" cols="50" rows="5" class="generalQuestClass" id="generalQuest_2" dir="ltr"></textarea>       </div>
+		
+		<hr>
+        <div id="DemVariables">
+            <label> Demographic variables (age, gender) </label>
+            <br>
+            <br>
+            <div>
+                <label> Age:
+                    <input type="text" name="ageText" id="ageText">
+                </label>
+            </div>
+            <br>
+              <div>
+                <label>
+                  <input type="radio" name="GenderGroup" value="0" id="male">
+                  Male</label>
+                <label>
+                  <input type="radio" name="GenderGroup" value="0" id="female">
+                  Female</label>
+                <br>
+              </div>
+          </div>
+          <hr>
+          <div id="comments">
+            <label>Feedback/comments: </label>
+            <br>
+            <br>
+            <textarea name="comments" cols="50" rows="5" class="commentsClass" id="commentsBox" dir="ltr"></textarea>  
+          </div>
+                
+                
+        <hr>
+      </div>
+      
+      <button class="nextLink" id="finalSubmit"> Submit </button>
+        <p>&nbsp;</p>
+        
+      
+        <input type="submit" onclick="resetAllSliders();" name="resetAllSliders" id="resetAllSliders" value="Reset">
+        <p>
+        <label>Click here if you wish to reset the questionnaire.
+        </label>
+        </p>
+      
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+	<script src="bootstrap-slider-master/dist/bootstrap-slider.min.js"></script>
+    <script src="jquery-cookie-1.4.1/jquery.cookie.js"></script>
+	<script src="JQSlider.js"></script>
+    <script>
+		onPageLoad();
+		saveInputsLast();
+	</script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="ie10-viewport-bug-workaround.js"></script>
+  </body>
+  </body>
+</html>

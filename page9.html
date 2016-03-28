@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Sam Zimmerman">
+    <link rel="icon" href="barth.ico">
+    <link rel="prev" href="page1.html" />
+
+    <title>Bootstrap with JQuery Sliders</title>
+
+   <!-- Bootstrap core CSS -->
+    <link href="bootstrap-3.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="bootstrap-slider-master/dist/css/bootstrap-slider.css" rel="stylesheet">
+    <link href="JQSlider.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">PROJECT TITLE</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+	<div class="container">
+
+    	<div class="questionPage">
+            <h1>Questionnaire Page 5</h1>
+            <p class="lead">
+            <h2>
+            Trading off: How many X points would you give up to get 10 Y points.</h2>
+            <hr>
+            
+            <p>
+            <div id="doubleSliderDiv_1" class = "doubleSliderDiv">
+            	<label> Points Trading:
+                	<input type="text" class="doubleSliderPointsBox" id="IQ_physicalFitness_pointsBox" onchange="doublePointsBoxChange(event);">
+            	</label>
+                <br>
+            	<div style="float:left"> 
+             
+                    <span id = "iQ_7SliderDescript" class="sliderDescription"> IQ </span>
+                    <br>
+                    <br>
+                    <br>
+                    <input class= "classSlider" id="iQ_7Slider"  parent="iQSlider" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="50"/>
+                         
+        		</div>
+             
+        		<div style="float:right">
+                    <span id = "physicalFitness_7SliderDescript" class="sliderDescription">	Physical Fitness & Health</span>
+                    <br>
+                    <br>
+                    <br>
+                    <input class= "classSlider" id="physicalFitness_7Slider" parent="physicalFitnessSlider" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="9"/>
+        		</div>
+        
+                <p>&nbsp;</p>
+                <br>
+                <br>
+        	</div>
+            </p>
+            <hr>
+            <p>
+            <div id="doubleSliderDiv_2" class = "doubleSliderDiv">
+            	<label> Points Trading:
+                	<input type="text" class="doubleSliderPointsBox" id="IQ_CHARISMA_pointsBox" onchange="doublePointsBoxChange(event);">
+            	</label>
+                <br>
+            	<div style="float:left"> 
+             
+                    <span id = "iQ_8SliderDescript" class="sliderDescription"> IQ </span>
+                    <br>
+                    <br>
+                    <br>
+                    <input class= "classSlider" id="iQ_8Slider"  parent="iQSlider" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="50"/>
+                         
+        		</div>
+             
+        		<div style="float:right">
+                    <span id = "charisma_7SliderDescript" class="sliderDescription">Charisma</span>
+                    <br>
+                    <br>
+                    <br>
+                    <input class= "classSlider" id="charisma_7Slider" parent="charismaSlider" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="9"/>
+        		</div>
+        
+                <p>&nbsp;</p>
+                <br>
+                <br>
+        	</div>
+            </p>
+            <hr> 
+           <p>
+            <div id="doubleSliderDiv_3" class = "doubleSliderDiv">
+            	<label> Points Trading:
+                	<input type="text" class="doubleSliderPointsBox" id="IQ_creativity_pointsBox" onchange="doublePointsBoxChange(event);">
+            	</label>
+                <br>
+            	<div style="float:left"> 
+             
+                    <span id = "iQ_9SliderDescript" class="sliderDescription"> IQ </span>
+                    <br>
+                    <br>
+                    <br>
+                    <input class= "classSlider" id="iQ_9Slider"  parent="iQSlider" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="50"/>
+                         
+        		</div>
+             
+        		<div style="float:right">
+                    <span id = "creativity_7SliderDescript" class="sliderDescription">Creativity</span>
+                    <br>
+                    <br>
+                    <br>
+                    <input class= "classSlider" id="creativity_7Slider" parent="creativitySlider" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="9"/>
+        		</div>
+        
+                <p>&nbsp;</p>
+                <br>
+                <br>
+        	</div>
+            </p>
+            <hr>
+           <p>
+            <div id="doubleSliderDiv_4" class = "doubleSliderDiv">
+            	<label> Points Trading:
+                	<input type="text" class="doubleSliderPointsBox" id="IQ_morality_pointsBox" onchange="doublePointsBoxChange(event);">
+            	</label>
+                <br>
+            	<div style="float:left"> 
+             
+                    <span id = "iQ_10SliderDescript" class="sliderDescription"> IQ </span>
+                    <br>
+                    <br>
+                    <br>
+                    <input class= "classSlider" id="iQ_10Slider"  parent="iQSlider" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="50"/>
+                         
+        		</div>
+             
+        		<div style="float:right">
+                    <span id = "morality_7SliderDescript" class="sliderDescription">Morality</span>
+                    <br>
+                    <br>
+                    <br>
+                    <input class= "classSlider" id="morality_7Slider" parent="moralitySlider" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="9"/>
+        		</div>
+        
+                <p>&nbsp;</p>
+                <br>
+                <br>
+        	</div>
+            </p>
+            <hr>
+            <p>
+            <div id="doubleSliderDiv_5" class = "doubleSliderDiv">
+            	<label> Points Trading:
+                	<input type="text" class="doubleSliderPointsBox" id="physicalFitness_charisma_pointsBox" onchange="doublePointsBoxChange(event);">
+            	</label>
+                <br>
+            	<div style="float:left"> 
+             
+                    <span id = "physicalFitness_8SliderDescript" class="sliderDescription"> Physical Fitness </span>
+                    <br>
+                    <br>
+                    <br>
+                    <input class= "classSlider" id="physicalFitness_8Slider"  parent="physicalFitnessSlider" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="50"/>
+                         
+        		</div>
+             
+        		<div style="float:right">
+                    <span id = "charisma_8SliderDescript" class="sliderDescription">Charisma</span>
+                    <br>
+                    <br>
+                    <br>
+                    <input class= "classSlider" id="charisma_8Slider" parent="charismaSlider" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="9"/>
+        		</div>
+        
+                <p>&nbsp;</p>
+                <br>
+                <br>
+        	</div>
+            </p>
+            <hr>
+            <p>
+            <div id="doubleSliderDiv_6" class = "doubleSliderDiv">
+            	<label> Points Trading:
+                	<input type="text" class="doubleSliderPointsBox" id="physicalFitness_creativity_pointsBox" onchange="doublePointsBoxChange(event);">
+            	</label>
+                <br>
+            	<div style="float:left"> 
+             
+                    <span id = "physicalFitness_9SliderDescript" class="sliderDescription"> Physical Fitness </span>
+                    <br>
+                    <br>
+                    <br>
+                    <input class= "classSlider" id="physicalFitness_9Slider"  parent="physicalFitnessSlider" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="50"/>
+                         
+        		</div>
+             
+        		<div style="float:right">
+                    <span id = "creativity_8SliderDescript" class="sliderDescription">Creativity</span>
+                    <br>
+                    <br>
+                    <br>
+                    <input class= "classSlider" id="creativity_8Slider" parent="creativitySlider" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="9"/>
+        		</div>
+        
+                <p>&nbsp;</p>
+                <br>
+                <br>
+        	</div>
+            </p>
+            <hr>
+            <p>
+            <div id="doubleSliderDiv_7" class = "doubleSliderDiv">
+            	<label> Points Trading:
+                	<input type="text" class="doubleSliderPointsBox" id="physicalFitness_morality_pointsBox" onchange="doublePointsBoxChange(event);">
+            	</label>
+                <br>
+            	<div style="float:left"> 
+             
+                    <span id = "physicalFitness_10SliderDescript" class="sliderDescription"> Physical Fitness</span>
+                    <br>
+                    <br>
+                    <br>
+                    <input class= "classSlider" id="physicalFitness_10Slider"  parent="physicalFitnessSlider" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="50"/>
+                         
+        		</div>
+             
+        		<div style="float:right">
+                    <span id = "morality_8SliderDescript" class="sliderDescription">Morality</span>
+                    <br>
+                    <br>
+                    <br>
+                    <input class= "classSlider" id="morality_8Slider" parent="moralitySlider" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="9"/>
+        		</div>
+        
+                <p>&nbsp;</p>
+                <br>
+                <br>
+        	</div>
+            </p>
+            <hr>
+            <p>
+            <div id="doubleSliderDiv_8" class = "doubleSliderDiv">
+            	<label> Points Trading:
+                	<input type="text" class="doubleSliderPointsBox" id="charisma_creativity_pointsBox" onchange="doublePointsBoxChange(event);">
+            	</label>
+                <br>
+            	<div style="float:left"> 
+             
+                    <span id = "charisma_9SliderDescript" class="sliderDescription"> Charisma</span>
+                    <br>
+                    <br>
+                    <br>
+                    <input class= "classSlider" id="charisma_9Slider"  parent="charismaSlider" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="50"/>
+                         
+        		</div>
+             
+        		<div style="float:right">
+                    <span id = "creativity_9SliderDescript" class="sliderDescription">Creativity</span>
+                    <br>
+                    <br>
+                    <br>
+                    <input class= "classSlider" id="creativity_9Slider" parent="creativitySlider" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="9"/>
+        		</div>
+        
+                <p>&nbsp;</p>
+                <br>
+                <br>
+        	</div>
+            </p>
+            <hr>
+            <p>
+            <div id="doubleSliderDiv_9" class = "doubleSliderDiv">
+            	<label> Points Trading:
+                	<input type="text" class="doubleSliderPointsBox" id="charisma_morality_pointsBox" onchange="doublePointsBoxChange(event);">
+            	</label>
+                <br>
+            	<div style="float:left"> 
+             
+                    <span id = "charisma_10SliderDescript" class="sliderDescription"> Charisma</span>
+                    <br>
+                    <br>
+                    <br>
+                    <input class= "classSlider" id="charisma_10Slider"  parent="charismaSlider" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="50"/>
+                         
+        		</div>
+             
+        		<div style="float:right">
+                    <span id = "morality_9SliderDescript" class="sliderDescription">Morality</span>
+                    <br>
+                    <br>
+                    <br>
+                    <input class= "classSlider" id="morality_9Slider" parent="moralitySlider" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="9"/>
+        		</div>
+        
+                <p>&nbsp;</p>
+                <br>
+                <br>
+        	</div>
+            </p>
+            <hr>
+            <p>
+            <div id="doubleSliderDiv_10" class = "doubleSliderDiv">
+            	<label> Points Trading:
+                	<input type="text" class="doubleSliderPointsBox" id="creativity_morality_pointsBox" onchange="doublePointsBoxChange(event);">
+            	</label>
+                <br>
+            	<div style="float:left"> 
+             
+                    <span id = "creativity_10SliderDescript" class="sliderDescription"> Creativity</span>
+                    <br>
+                    <br>
+                    <br>
+                    <input class= "classSlider" id="creativity_10Slider"  parent="creativitySlider" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="50"/>
+                         
+        		</div>
+             
+        		<div style="float:right">
+                    <span id = "morality_10SliderDescript" class="sliderDescription">Morality</span>
+                    <br>
+                    <br>
+                    <br>
+                    <input class= "classSlider" id="morality_10Slider" parent="moralitySlider" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="9"/>
+        		</div>
+        
+                <p>&nbsp;</p>
+                <br>
+                <br>
+        	</div>
+            </p>
+            <hr>
+           <p>&nbsp;</p>
+           <button class="nextLink"> Next-> </button>
+            <p>&nbsp;</p>
+            
+          
+            <input type="submit" onclick="resetAllSliders();" name="resetAllSliders" id="resetAllSliders" value="Reset">
+            <p>
+            <label>Click here if you wish to reset the questionnaire.
+            </label>
+            </p>
+            
+      </div>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+	<script src="bootstrap-slider-master/dist/bootstrap-slider.min.js"></script>
+    <script src="jquery-cookie-1.4.1/jquery.cookie.js"></script>
+	<script src="JQSlider.js"></script>
+    <script>
+		onPageLoad();
+		insertDoubleResetButtons();
+		disableSliders();
+	</script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="ie10-viewport-bug-workaround.js"></script>>
+  </body>
+</html>

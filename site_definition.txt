@@ -1,0 +1,59 @@
+Experiment design for first experiment below. We'll hopefully run a series of experiments like this so, as you said, thinking about reuse is useful.
+
+_____________________
+PAGE 1
+
+Initial statement about participating in experiment, including informed consent, what is expected, etc. Some prompt to make people be honest, though not crucial. We'll work out exact text so just lorem ipsum is good.
+
+________________________
+PAGE 2
+Who are you? 
+For the following traits, please rate yourself on the sliders from 0-100: IQ, Physical fitness/health, Charisma, Creativity, How moral you are.
+
+For the following traits, please rate yourself along the scale: Optimism/Pessimism, Introversion/Extroversion, Openness to new experiences, I go with my head/heart (should probably mark endpoints e.g. 'extremely introverted and extremely extroverted) 
+_________________________
+PAGE 3
+[Each of the following questions can be presented in random order. The participant should be reminded in some way of their answer to question 1, either having it 'pasted' on the side for reference, or perhaps having colored arrows indicate their initial choice on the slider, or something else, whatever is easiest. Ideally, a record of the order in which the questions were presented to participants will be stored.]
+
+If you could change who you are by changing these traits, who sort of person would you like to be (allow participants to freely change valenced and non valenced traits)?
+_______________________________
+PAGE 4
+
+Suppose you were given 25 points to improve your traits, how would you divide them? [Only for valenced traits, have something indicating 'pool' of remaining points. Do not let participants go below their original answer. Indicate their original answer with arrows or something else]
+____________________________
+PAGE 5
+4. Suppose you were offered to chance to change who you are, but you can only do this by trading off traits against each other. For example, you can add 10 points to charisma, but you need to take those 10 points off the other traits in some way [Only for valenced traits, have something indicating 'pool' of remaining points. Indicate their original answer with arrows or something else]
+_________________________
+PAGE 6
+Show people new characters. If your traits were changed in the following way, is this still you? If someone else had these traits, how similar  are they to you? [All traits] [On a scale from 'Exactly the same' to 'As different as is possible']
+___________________________
+PAGE 7
+What would someone who is as  dissimilar to you as possible be like?
+_______________________
+PAGE 8
+Who will you be in 10 years? [All traits]
+________________________
+PAGE 9
+Trading off: How many X points would you give up to get 10 Y points. [Valenced traits]
+Show the various pairwise combinations of valenced traits.
+__________________________________
+PAGE 10
+
+[The following questions should come at the end, non-randomized]:
+
+New dimensions: Suggest 3 additional traits not listed here, which you think are important in describing who you are as a person. Rate yourself on a scale for these traits.  [This is tricky if not valenced, but we might have to see what pilot data brings up]
+
+Space to add some general questions about personality / identity (endorsing the statements "I think the situation determines your reaction / I think your personality determines your reaction", "I will be a very different person in 10 years", etc). We'll work out exact questions.
+
+Demographic variables (age, gender)
+
+Feedback/comments
+
+___________________________________
+PAGE 11
+
+Submission successful page.
+__________________________________
+
+Samuel Zimmerman
+814-279-7110
